@@ -49,26 +49,26 @@ git config --global user.email "Your email"
 
 ## Git commands
 
-- git init - Create a new local repository
+- **git init** - Create a new local repository
 
 This command initializes an empty Git repository in the selected folder.
 
 #Create a new directory called my-project
 $ git init my-project
 
-- git status - show the status of the current branch
+- **git status** - show the status of the current branch
 i.e Check for uncommitted changes
 
 #check the status of the current branch
 
 $ git status  # on branch main
 
-- git clone - Clone a repository that already exists om GIthub to your local machine
+- **git clone** - Clone a repository that already exists om GIthub to your local machine
 
 $ git clone project-name 
 #make sure to copy the URL from the repository you want to clone
 
-- git add - Add files to the staging area
+- **git add** - Add files to the staging area
 
 $ git add . # changes to be committed:
 #when you add the dot, it adds all files in the current directory
@@ -80,7 +80,7 @@ $ git add file-name
 
 $ git commit -m "commit message"
 
-- git pull - fetch and merge the changes from the remote main branch into your local main branch.
+- **git pull** - fetch and merge the changes from the remote main branch into your local main branch.
 
 $ git pull origin main 
 
@@ -89,7 +89,7 @@ $ git pull origin main
  #1 file changed, 1 insertion(+)
  #create mode 100644 README.md
 
-- git push - push changes to remote repository (e.g Github)
+- **git push** - push changes to remote repository (e.g Github)
 
 $ git push origin main
 i.e
@@ -103,16 +103,16 @@ i.e
 #To https://github.com/CliveOuma/student-management-system.git
    51e9e40..5afa07c  main -> main
 
-- git fetch - Fetch changes on the remote server to your local main branch
+- **git fetch** - Fetch changes on the remote server to your local main branch
 
 $ git fetch origin main
 #remote: counting objects: 4, done.
 
-- git merge - Merge a branch into a branch you are currently on
+- **git merge** - Merge a branch into a branch you are currently on
 
 $ git merge branch-name 
 
-- git branch - List, create, delete branches
+- **git branch** - List, create, delete branches
 
 
 #PS C:\Users\clive.DESKTOP-4BRK07K\Documents\system> git branch
@@ -120,13 +120,13 @@ $ git merge branch-name
 
 $ git branch -d branch-name # Delete branch
 
-- git checkout - switch branches or restore working tree files
+- **git checkout** - switch branches or restore working tree files
 
 $ git checkout branch-name # Switched to 'branch-name'
 
 $ git checkout -b branch-name  # Create and switch to a new branch  "branch-name"
 
-- git remote - Manage set of tracked repositories
+- **git remote** - Manage set of tracked repositories
 
 $ git remote -v # checks configured remote repositories
 
@@ -136,16 +136,16 @@ $ git remote add origin <repository-url>
 
 $ git remote set-url origin <new-repository-url> # Verify repository url (Make sure the repository URL is correct. If you recently created the repository or if the URL has changed, update it using the above command)
 
-- git log - show commit logs
+- **git log** - show commit logs
           - view the history of a repository
 
 $ git log # show commit logs
 
-- git reset - Reset staging area to the last commit
+- **git reset** - Reset staging area to the last commit
 
 $ git reset # i.e can be used to unstage files
 
-- git rm - Remove files from the working tree and from the index
+- **git rm** - Remove files from the working tree and from the index
 
 #Cleanup unnecessary files and optimize the local repository
 
@@ -161,15 +161,15 @@ $ git stash apply
 
 $ git rm file-name # rm 'file-name'
 
-- git mv - Move or rename a file, a directory
+- **git mv** - Move or rename a file, a directory
 
 $ git mv file-from file-to # rename file1 => file2
 
-- git diff - show the differences between teo commits, branches, filesor the working directory
+- **git diff** - show the differences between teo commits, branches, filesor the working directory
 
 $ git diff # diff --git a/README.md b/README.md
 
-- git revert - Revert changes to a file
+- **git revert** - Revert changes to a file
 
 $ git revert file-name # Revert "Revert "Update README.md"
 
